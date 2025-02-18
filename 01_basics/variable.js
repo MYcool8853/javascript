@@ -1,4 +1,4 @@
-const id = 1234
+const id = 11
 let email = "mycool@gmail.com"
 var password = 2233;
 city = "varanasi"  // allow declare without using any variable
@@ -13,4 +13,5 @@ city = "delhi"
 
 console.log(id);
 console.table([id,email,password,city,state]);
+console.log(id,email,password,city,state);
 
