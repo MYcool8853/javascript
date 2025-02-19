@@ -48,6 +48,18 @@ console.log(1+2+"2");
 console.log(+true); //trick conversion 
 console.log(+"");
 
+let num1,num2,num3
+num1=num2=num3=2+2
+console.log(num1,num2,num3);
+
+let x = 100
+let y = x++  // in postfix first assing the value then increment
+console.log("x =",x,"y =",y);
+
+y = ++x     // in prefix first increment the value then assing
+console.log("x =",x,"y =",y);
+
+
 
 
 
