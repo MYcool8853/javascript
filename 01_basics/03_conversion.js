@@ -43,7 +43,11 @@ console.log("1"-6-2);
 console.log(1+2+"2");
 
 // In coercion compiler expect the type of variable is same but in case variable is 
-// not same then JavaScript follows specific rules for coercion based on operator types and context. 
+// not same then JavaScript follows specific rules for coercion based on operator types and context.
+
+console.log(+true); //trick conversion 
+console.log(+"");
+
 
 
 
