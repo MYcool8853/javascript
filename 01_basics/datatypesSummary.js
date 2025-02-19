@@ -21,20 +21,39 @@ console.log(movie,typeof movie);
 
 
 // Object
+let age = Symbol("age_years")  // Symbol use in Object
+let empId = Symbol("emp_id")
+
 let myObj = {
     name: "irfan_khan",
-    age: 22,
+    [age]: 22,
     city: "varanasi",
 }
+myObj[empId] = 203   // declare object key:value outside the block
+myObj["gender"] = "male"
+
 console.log(myObj,typeof myObj);
+console.log(myObj.name);
+console.log(myObj[empId]);
+
+console.log("----------loop--------");
+
+for(let key in myObj)
+{
+    console.log(key);  // loop ignore the Symbol()    
+}
+
+console.log("----------JSON--------");
+console.log(JSON.stringify(myObj));  // convert the object in json format but skip the Symbol value
 
 
 // Funtion
 const myFuntion = function(){
     
-    console.log("hello Mycool");    
+    console.log("hello Mycool");   
 }
 myFuntion()
 console.log(typeof myFuntion);  //output->funtion but in detail we call is (Object funtion) 
 
 // Note: Type of all Non-Primitive Datatypes is Object
+
