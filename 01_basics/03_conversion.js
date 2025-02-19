@@ -24,7 +24,26 @@ let stringAge = String(age)
 console.log(stringAge);         // actual is number but output->24(string) 
 console.log(typeof stringAge);
 
+//******************************operation********************************************
 
+let value = 3
+let negativeValue = -value
+console.log(negativeValue);
+
+console.table([2+2,2-2,2*2,2/2,3%2,2**3]);
+
+// *****************************************Coercion******************************
+
+console.log("1"+2);
+console.log(1+"2");
+console.log(1-"4");  
+console.log("1"-2);
+console.log("1"+2+2);
+console.log("1"-6-2);
+console.log(1+2+"2");
+
+// In coercion compiler expect the type of variable is same but in case variable is 
+// not same then JavaScript follows specific rules for coercion based on operator types and context. 
 
 
 
