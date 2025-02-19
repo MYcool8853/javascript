@@ -57,3 +57,39 @@ console.log(typeof myFuntion);  //output->funtion but in detail we call is (Obje
 
 // Note: Type of all Non-Primitive Datatypes is Object
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//  Stack(Primitive), Heap(Non-Prinmitive)
+console.log("------------Stack and Heap------------------");
+
+
+let myName = "irfan"
+let myNickName = myName
+myNickName = "manu"
+
+console.log(myName);
+console.log(myNickName);
+
+let userOne = {
+    email: "irfankhan@gmail.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+userTwo.email = "manucool@gmial.com"
+
+console.log(userOne);
+console.log(userTwo);
+
+// Conclusion-> In Stack(Primitive) memory create a new copy and change/update in copy value
+//              In Heap(Non-Primitive) memory give the reference not create copy,
+//              reference means changes/update are in orignal value
+
+// [          ]  both are same reference   [             ]     
+// [ userTwo  ]--------------------------->| {           |
+// [ userOne  ]--------------------------->|    email:"" |
+// [  myName  ]---|                        |    upi:""   |
+// [myNickName]   |<--copy value           | }           |
+// [__myName__]---|                        [_____________]
+//    STACK                                     HEAP
+
+
