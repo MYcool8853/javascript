@@ -26,15 +26,15 @@ let empId = Symbol("emp_id")
 
 let myObj = {
     name: "irfan_khan",
-    [age]: 22,
+    [age]: 22, // symbol key:value pair
     city: "varanasi",
 }
-myObj[empId] = 203   // declare object key:value outside the block
+myObj[empId] = 203        // declare object key:value outside the block using ([],"") in case symbol not use ("")
 myObj["gender"] = "male"
 
 console.log(myObj,typeof myObj);
-console.log(myObj.name);
-console.log(myObj[empId]);
+console.log(myObj.name);     //call single key using(.) operator in case of symbol not use (.)
+console.log(myObj[empId]); 
 
 console.log("----------loop--------");
 
@@ -80,9 +80,9 @@ userTwo.email = "manucool@gmial.com"
 console.log(userOne);
 console.log(userTwo);
 
-// Conclusion-> In Stack(Primitive) memory create a new copy and change/update in copy value
+// Conclusion-> In Stack(Primitive) memory create a new copy and change/update value of copy variable
 //              In Heap(Non-Primitive) memory give the reference not create copy,
-//              reference means changes/update are in orignal value
+//              reference means changes/update are in orignal value of variable
 
 // [          ]  both are same reference   [             ]     
 // [ userTwo  ]--------------------------->| {           |
