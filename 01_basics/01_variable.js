@@ -15,3 +15,23 @@ console.log(id);
 console.table([id,email,password,city,state]);
 console.log(id,email,password,city,state);
 
+function fn() {
+    console.log(city);
+}
+fn()
+
+if (true) {
+    var age = 30;
+    console.log(age); 
+    function fn(){ console.log(age)}
+    fn();
+}
+console.log(age)
+
+if (true) {
+    let id = 30;
+    console.log(id); 
+    function fn(){ console.log(id)}
+    fn();
+}
+console.log(id) 
