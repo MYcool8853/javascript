@@ -2,12 +2,12 @@ const myname = "mycool"
 const count = 50
 // console.log(myname+count+" Value");
 
-// It is string interpolation syntax
+// It is string interpolation syntax put the varibale using ${}
 console.log(`my nane is ${myname} and my repo count is ${count}`);
 
 const gameName = new String("irfankhan")
 console.log(gameName[0]);
-console.log(gameName.__proto__);
+console.log(gameName.__proto__);  //show all string method
 console.log(gameName.length);
 console.log(gameName.toUpperCase());
 console.log(gameName.charAt(3));
@@ -26,4 +26,4 @@ console.log(myString.trim());
 const url = "https://www.youtube.com%20watch"
 console.log(url.replace('%20',"_"));
 
-console.log(url.includes("youtube"));
+console.log(url.includes("youtube")); //find the string in given URL
