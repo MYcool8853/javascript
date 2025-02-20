@@ -4,11 +4,11 @@ var password = 2233;
 city = "varanasi"  // allow declare without using any variable
 let state;
 
-// id = 4 not allow reassign,redeclare
-// let email = "irfan@gmail.com" ----not allow redeclare 
-email = "irfan@gmail.com"  // ----allow reassign
+// id = 4 not allow reassign,redeclare in const
+// let email = "irfan@gmail.com" ----not allow redeclare in let
+email = "irfan@gmail.com"  // ----allow reassign in let
 
-var password = 5566    // ----allow redeclare and reassign
+var password = 5566    // ----allow redeclare and reassign in var
 city = "delhi" 
 
 console.log(id);
@@ -26,7 +26,7 @@ if (true) {
     function fn(){ console.log(age)}
     fn();
 }
-console.log(age)
+console.log(age)  // var access globally
 
 if (true) {
     let id = 30;
@@ -34,4 +34,4 @@ if (true) {
     function fn(){ console.log(id)}
     fn();
 }
-console.log(id) 
+console.log(id) // let ,const is block scope(function scope) not access outside the blocked
