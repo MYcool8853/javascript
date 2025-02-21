@@ -24,4 +24,5 @@ console.log(Array.from({name: "irfan"})); // return empty[] array because in obj
 let i = 100
 let j = 200
 let k = 300
-console.log(Array.of(i,j,k));
+console.log(Array.of(i,j,k));  // Returns a new array from a set of elements.
+ 
