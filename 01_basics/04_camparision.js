@@ -22,9 +22,9 @@ console.log(null == 0);          // Comparisons convert null to a number, treati
 console.log(null >= 0);          // That's why (3) null >= 0 is true and (1) null > 0 is false
 
 console.log("undefined null"); 
-console.log(undefined > 0);           
-console.log(undefined == 0);           
-console.log(undefined >= 0);          
+console.log(undefined > 0);          // false 
+console.log(undefined == 0);         // false
+console.log(undefined >= 0);         // false
 
 //------------------------(===) check the dataypes and value both are same--------------------
 console.log("strict check"); 
