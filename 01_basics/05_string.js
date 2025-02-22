@@ -13,7 +13,7 @@ console.log(gameName.toUpperCase());
 console.log(gameName.charAt(3));
 console.log(gameName.indexOf('n'));
 
-const newString = gameName.substring(0,4)
+const newString = gameName.substring(0,4) 
 console.log(newString);
 
 const anotherString = gameName.slice(-9,7)
