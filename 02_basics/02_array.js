@@ -14,7 +14,7 @@ const new_heros = [...marvel,...dc]   // spread method here array spred into ind
 console.log(new_heros);
 
 const new_arr = [2,3,4,[11,22,33,44],66,88,[12,13,[14,15,16]],77]
-const another_arr = new_arr.flat(Infinity)  // we can pass the parameter infinity and depth(2)
+const another_arr = new_arr.flat(Infinity)  // we can pass the parameter infinity or calculate the depth(2) of array 
 console.log(another_arr); // concat() all subarray
  
 console.log(Array.isArray("hitesh"));  //check is array or not true/false
