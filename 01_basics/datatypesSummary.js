@@ -29,7 +29,7 @@ let myObj = {
     [age]: 22, // symbol key:value pair
     city: "varanasi",
 }
-myObj[empId] = 203        // declare object key:value outside the block using 'object_name(["key"])' in case symbol not use ("")
+myObj[empId] = 203        // declare object 'key:value' outside the block using 'object_name(["key"])' in case symbol not use ("")
 myObj["gender"] = "male"
 
 console.log(myObj,typeof myObj);
