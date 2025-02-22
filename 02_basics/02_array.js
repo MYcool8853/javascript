@@ -1,13 +1,13 @@
 const marvel = ["thor","ironoman","spiderman"]
 const dc = ["superman","flash","batman"]
 
-// marvel.push(dc)             //push the array into another array
-// console.log(marvel);        // [ 'thor', 'ironoman', 'spiderman', [ 'suoerman', 'flash', 'batman' ] ]
-// console.log(marvel[3]);     // here the dc[array] insert as a single data 
-// console.log(marvel[3][0]);  // superman
+marvel.push(dc)             //push the array into another array
+console.log(marvel);        // [ 'thor', 'ironoman', 'spiderman', [ 'suoerman', 'flash', 'batman' ] ]
+console.log(marvel[3]);     // here the dc[array] insert as a single data 
+console.log(marvel[3][0]);  // superman
 
-// const all_heros = marvel.concat(dc) // concat() return the new array and merge properly but
-// console.log(all_heros);             // push() add in existing array
+const all_heros = marvel.concat(dc) // concat() return the new array and merge properly but
+console.log(all_heros);             // push() add in existing array
 
 //-------------another---Method--------------------
 const new_heros = [...marvel,...dc]   // spread method here array spred into individual array
