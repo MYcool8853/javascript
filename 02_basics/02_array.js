@@ -6,7 +6,7 @@ console.log(marvel);        // [ 'thor', 'ironoman', 'spiderman', [ 'suoerman', 
 console.log(marvel[3]);     // here the dc[array] insert as a single data 
 console.log(marvel[3][0]);  // superman
 
-const all_heros = marvel.concat(dc) // concat() return the new array and merge properly but
+const all_heros = marvel.concat(dc) // concat() return the new array and merge properly
 console.log(all_heros);             // push() add in existing array
 
 //-------------another---Method--------------------
